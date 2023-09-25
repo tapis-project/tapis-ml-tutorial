@@ -9,9 +9,14 @@ nav:
   - Introduction to Jupyter: ./Jupyter_Notebook/intro-to-jupyter
 - Tapis Systems:
   - Intro to Tapis Systems: ./Tapis_systems/02-systems
+- Natural Language Processing:
+  - NLP: ./NLP/nlp
 - Tapis Apps:
-  - Intro to Apps: ./Tapis_apps_jobs/03-apps
+  - Intro to Apps: ./Tapis_apps_jobs/03-apps.md
 - Tapis Jobs:
-  - Intro to Tapis Jobs: ./Tapis_apps_jobs/04-jobs
+  - Intro to Tapis Jobs: ./Tapis_apps_jobs/04-jobs.md
+- Jupyter Notebook:
+  - Notebook: ./Jupyter_Notebook/TACCSTER23_sentiment_analysis.ipynb
+ 
 
 theme: jekyll-theme-minimal
