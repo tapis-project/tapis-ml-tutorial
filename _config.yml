@@ -17,6 +17,4 @@ nav:
   - Intro to Tapis Jobs: ./Tapis_apps_jobs/04-jobs.md
 - Jupyter Notebook:
   - Notebook: ./Jupyter_Notebook/TACCSTER23_sentiment_analysis.ipynb
- 
-
 theme: jekyll-theme-minimal

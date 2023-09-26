@@ -30,7 +30,7 @@ It is commonly used to make business decisions or improve processes based on the
 
 ### Tools for Sentiment Analysis
 
-In this tutorial we will use tools provided by [Hugging Face](https://huggingface.co)to perform sentiment analysis. 
+In this tutorial we will use tools provided by [Hugging Face](https://huggingface.co) to perform sentiment analysis. 
 
 Hugging face platform provides tools that enables users to build, train and deploy their ML models and share their models and dataset with researchers, data scientists, developers,etc.
 
