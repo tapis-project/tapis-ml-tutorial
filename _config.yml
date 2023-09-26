@@ -7,7 +7,7 @@ nav:
   - Intro to Tapis: ./Intro_Tapis/01-intro-to-tapis
 - Intro to Jupyter:
   - Introduction to Jupyter: ./Jupyter_Notebook/intro-to-jupyter
-  - Notebook: ./Jupyter_Notebook/TACCSTER23_sentiment_analysis
+  - Notebook: ./Jupyter_Notebook/TACCSTER23_sentiment_analysis.ipynb
 - Tapis Systems:
   - Intro to Tapis Systems: ./Tapis_systems/02-systems
 - Natural Language Processing:
