@@ -11,7 +11,7 @@ Dowload the Jupyter Notebook by clicking the link below:
 
 ### Starting up your Jupyter Notebook Environment
 
-For this tutorial, we will use [Google Collab](https://colab.research.google.com) 
+For this tutorial, we will use [Google Colab](https://colab.research.google.com) 
 You may login with your google accounts.
 
 
