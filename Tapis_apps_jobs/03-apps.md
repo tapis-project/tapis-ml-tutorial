@@ -64,32 +64,24 @@ Here is an example of an application definition:
 ``` python
 app_def = {
     "id": app_id,
-    "version": "dev",
+    "version": "0.2",
+    "description": "Application utilizing the sentiment analysis model from Hugging Face.",
     "jobType": "FORK",
     "runtime": "DOCKER",
-    "description": "High-Performance Material Point Method (CB-Geo mpm) DEVELOPMENT version.",
-    "containerImage": "tapis/mpm:dev",
+    "containerImage": "tapis/sentiment-analysis:1.0.0",
     "jobAttributes": {
-        "isMpi": False,
         "parameterSet": {
-            "appArgs": [
-                {"name": "directoryInputFlag", "arg": "-f", "inputMode": "FIXED"},
-                {"name": "directoryInput", "arg": "/home/cbgeo/research/mpm-benchmarks/2d/uniaxial_stress/", "inputMode": "REQUIRED"}
-            ] 
-        },
-        "fileInputs": [
-            {
-                "name": "directoryInput",
-                "inputMode": "OPTIONAL",
-                "targetPath": ".",
-                "description": "Input directory that contains the MPM congiguration file as well as any other required files. Note that to utilize this attribute one must also set the directoryInput parameter to mbe the value of the name of the directory. Also note that if this directory is not provided, a default (included in the appliation container image) will be used."
+            "archiveFilter": {
+                "includeLaunchFiles": False
             }
-        ]
+        },
+        "memoryMB": 1,
+        "nodeCount": 1,
+        "coresPerNode": 1,
+        "maxMinutes": 10
     }
-
 }
 ```
-where ``<userid>`` is replaced with your username.
 
 #### Using ``tapipy`` to register the application:
 ``` python
@@ -105,7 +97,7 @@ To retrieve details for a specific application, such as the one above:
 
 #### Using ``tapipy``:
 ``` python
- t.apps.getAppLatestVersion(appId='mpm-docker-<userid>')
+ t.apps.getAppLatestVersion(appId=app_id)
 ```
 
 ## Next Steps

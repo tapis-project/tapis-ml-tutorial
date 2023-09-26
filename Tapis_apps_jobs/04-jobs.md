@@ -66,8 +66,18 @@ MPM app needs two arguments:
 ### Submit a job on VM Host
 
 ```
-job_response_vm=client.jobs.submitJob(name='mpm-job-vm',description='mpm-job',appId=app_id,execSystemId='tapisv3-exec-<userid>',appVersion= '0.0.1')
-print(job_response_vm.uuid)
+#Submit job to run the sentiment analysis application
+pa= {
+    "parameterSet": {
+    "appArgs": [
+        {"arg": "--text 'I am happy today'"}
+
+        ]
+    }}
+
+# Submit a job
+job_response_vm=client.jobs.submitJob(name='sentiment analysis',description='sentiment analysis with hugging face transformer pipelines',appId=app_id,appVersion='0.2',execSystemId=system_id_vm, **pa)
+
 
 ```
 
@@ -127,6 +137,5 @@ HPC like system, and now you can run that tool through the cloud from anywhere! 
 At this point, it would be a good idea to connect with other developers that are publishing apps and running workflows
 through Tapis by joining the Tapis API Slack channel: [tacc-cloud.slack.com](https://bit.ly/2XHYJEk)
 
-[Next-> Workflows](./06-creating-a-pipeline-and-task-with-tapisui.md)
 
 
