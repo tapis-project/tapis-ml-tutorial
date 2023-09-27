@@ -58,10 +58,6 @@ With appArgs parameter you  can specify one or more command line arguments for t
 Arguments specified in the application definition are appended to those in the submission request. Metadata can be
 attached to any argument.<br/>
 
-MPM app needs two arguments:
-* directoryInputFlag
-* directoryInput
-
 
 ### Submit a job on VM Host
 
