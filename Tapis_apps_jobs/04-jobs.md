@@ -37,7 +37,7 @@ After these synchronous steps job processing proceeds asynchronously. Each job i
 
 Simple job submission example:
 ```
-job_response_vm=client.jobs.submitJob(name='mpm-job-vm',description='material point method',appId=app_id,execSystemId=system_id_vm,appVersion= 'dev')
+job_response_vm=client.jobs.submitJob(name='sentiment analysis',description='sentiment analysis with hugging face transformer pipelines',appId=app_id,appVersion='0.2',execSystemId=system_id_vm, **pa)
 
 ```
 * **appId**	- The Tapis application to execute.  This must be a valid application that the user has permission to run.
