@@ -1,4 +1,4 @@
-# Best Practices of CI/CD for High Performance Computation with Tapis Workflows API
+# Tapis ML tutorial
 
 ## Schedule
 * 12.30 PM Welcome
